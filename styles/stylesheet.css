@@ -53,9 +53,11 @@ body {
 #top-nav #side-menu-opener {
   float: left;
   border-radius: 30px;
+}
+#side-menu-opener,
+#side-menu-closer {
   cursor: pointer;
 }
-
 #top-nav a:hover {
   background-color: #ddd;
   color: black;
@@ -65,4 +67,20 @@ body {
   background-color: #04aa6d;
   color: white;
 }
-
+#side-nav {
+  width: 24vw;
+  height: 100%;
+  border-radius: 0 0 45px 0;
+  background-color: #ffeeee;
+  position: absolute;
+  top: 2px;
+}
+#side-nav #side-menu-closer {
+  float: right;
+  color: red;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 0;
+  font-size: 45px;
+}
