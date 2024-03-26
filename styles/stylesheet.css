@@ -9,7 +9,7 @@
 @import url(./fontfamilies.css);
 /* Standaard lettertypes voor Mar-stijl */
 body {
-    font-family: "Josefin Sans", "Fira Sans", serif;
+  font-family: "Josefin Sans", "Fira Sans", serif;
 }
 
 h1,
@@ -19,48 +19,50 @@ h4,
 h5,
 h6,
 .speciaal {
-    font-family: "Gantari", "Syne", cursive;
+  font-family: "Gantari", "Syne", cursive;
 }
 
 /* Einde standaard lettertypes voor Mar-stijl */
 
 body {
-    background-color: #848484;
-    padding: 0;
-    margin: 0;
+  background-color: #848484;
+  padding: 0;
+  margin: 0;
 }
 
 #top-nav {
-    overflow: hidden;
-    top: 0;
-    background-color: #B3B43E;
-    margin: 0;
+  overflow: hidden;
+  top: 0;
+  background-color: #b3b43e;
+  margin: 0;
 }
 
-#top-nav a, #top-nav #side-menu-opener {
-    margin: 10px;
-    float: right;
-    color: #f2f2f2;
-    border-radius: 5px;
-    background-color: #339DB4;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+#top-nav a,
+#top-nav #side-menu-opener {
+  margin: 10px;
+  float: right;
+  color: #f2f2f2;
+  border-radius: 5px;
+  background-color: #339db4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 #top-nav #side-menu-opener {
-    float: left;
-    border-radius: 30px;
-    cursor: pointer;
+  float: left;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 #top-nav a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 #top-nav a.current {
-    background-color: #04AA6D;
-    color: white;
+  background-color: #04aa6d;
+  color: white;
 }
+
