@@ -1,0 +1,54 @@
+.gridmain {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 50%;
+}
+.gridmain * {
+    line-break: loose !important;
+}
+.gridmain #main-l {
+    overflow:unset;
+    display: grid;
+    line-gap-override: 0px;
+    grid-auto-flow: row;
+}
+
+.gridmain #main-l div {
+    height: max-content;
+    max-height: 26VH;
+    max-width: 80%;
+}
+
+.gridmain #main-r,
+.gridmain #main-l div {
+    background-color: #f0f8ff;
+    margin: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 12px;
+}
+.gridmain #main-r {
+    width: 30vw;
+    margin: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-auto-flow: row;
+}
+.nieuwsitem {
+    background-color: #D7D6D5;
+    /* overflow: clip; */
+    max-width: 80%;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 40px;
+}
+
+.nieuwsitem h1 {
+    font-size: 19px;
+}.nieuwsitem h2 {
+    font-size: 16px;
+}.nieuwsitem h3 {
+    font-size: 14px;
+}.nieuwsitem h4, .nieuwsitem {
+    font-size: 11px;
+}
