@@ -38,15 +38,19 @@ body {
   margin: 0;
   height: 65px;
 }
+
 #bannerafbeelding {
   height: 45px;
-  margin-left: 40%;
-  margin-right: auto;
+  max-width: 10VW;
+  position: absolute;
+  left: 40VW;
+  right: 40VW;
   margin-top: 2px;
   background-color: #d7d6d5;
   border-radius: 30px;
   padding: 6px;
 }
+
 #top-nav a,
 #top-nav #side-menu-opener {
   margin: 10px;
@@ -66,7 +70,7 @@ body {
 }
 
 #side-menu-opener,
-#side-menu-closer {
+#side-menu-closer button {
   cursor: pointer;
 }
 
@@ -76,18 +80,26 @@ body {
 }
 
 #top-nav a.current {
-  background-color: #04aa6d;
-  color: white;
+  /* text-decoration: underline 1.5px wavy; */
+  padding: 13.5px 15.5px;
+  border: white 1px solid;
+}
+
+#top-nav a.current:hover {
+  background-color: rgba(110, 110, 110, 0.329);
 }
 
 #side-nav {
   width: 24vw;
+  min-width: 8cm;
   height: 99%;
   z-index: 102;
   border-radius: 0 0 45px 0;
+  box-shadow: ;
   background-color: #ffeeee;
   position: absolute;
   top: 0;
+  overflow: clip;
   /* Transitie zorgt voor een vloeiende beweging tussen open en dicht. */
   -webkit-transition: all 0.7s ease-out;
   -moz-transition: all 0.7s ease-out;
@@ -103,16 +115,19 @@ body {
   font-size: 25px;
   color: #2b2929;
   display: block;
-  transition: 0.3s;
+  transition: .3s;
 }
+
 #side-nav a:hover {
   color: #339db4;
 }
+
 #side-nav #side-menu-closer {
   display: inline-block;
   width: 100%;
   height: 45px;
 }
+
 #side-nav #side-menu-closer button {
   float: right;
   color: red;
@@ -126,22 +141,18 @@ body {
 }
 
 #side-nav #side-menu-closer button:hover {
-  color: orange;
+  color: orange
 }
+
 main {
-  background-color: #d7d6d5;
+  background-color: #D7D6D5;
   border-radius: 30px;
   display: block;
   padding: 10px;
-  height: 80vh;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  width: 70vw;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  height: 80VH;
+  margin-top: 10VH;
+  margin-bottom: 10VH;
+  width: 70VW;
+  margin-left: 15VW;
+  margin-right: 15VW;
 }
-#main {
-  height: 100%;
-  width: 100%;
-}
-
