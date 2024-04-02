@@ -9,7 +9,7 @@
 const sidenav = {
 	close: () => {
 		document.getElementById("side-nav").style.left = `-${
-			document.getElementById("side-nav").offsetWidth
+			document.getElementById("side-nav").offsetWidth + 30
 		}px`;
 	},
 	open: () => {
