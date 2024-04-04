@@ -1,39 +1,55 @@
 .gridmain {
     display: grid;
+    height: 90%;
     grid-auto-flow: column;
     grid-auto-columns: 50%;
 }
+
 .gridmain * {
     line-break: loose !important;
 }
+
 .gridmain #main-l {
-    overflow:unset;
+    overflow: unset;
     display: grid;
     line-gap-override: 0px;
     grid-auto-flow: row;
 }
 
-.gridmain #main-l div {
+.gridmain #main-l > div {
     height: max-content;
-    max-height: 26VH;
+    /* overflow: hidden; */
+    max-height: 35VH;
     max-width: 80%;
 }
 
-.gridmain #main-r,
-.gridmain #main-l div {
-    background-color: #f0f8ff;
-    margin: 20px;
-    border-radius: 30px;
-    padding: 10px;
-    font-size: 12px;
-}
-.gridmain #main-r {
-    width: 30vw;
-    margin: 20px;
+.gridmain #main-r>div#spotlight {
     overflow: hidden;
     display: grid;
     grid-auto-flow: row;
 }
+
+.gridmain #main-r>h1 {
+    display: inline-block;
+    line-height: 13px;
+    height: 13px;
+}
+
+.gridmain #main-r,
+.gridmain #main-l>div {
+    background-color: #f0f8ff;
+    margin: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 0.7em;
+}
+
+.gridmain #main-r {
+    width: 30vw;
+    margin: 20px;
+
+}
+
 .nieuwsitem {
     background-color: #D7D6D5;
     /* overflow: clip; */
@@ -45,10 +61,17 @@
 
 .nieuwsitem h1 {
     font-size: 19px;
-}.nieuwsitem h2 {
+}
+
+.nieuwsitem h2 {
     font-size: 16px;
-}.nieuwsitem h3 {
+}
+
+.nieuwsitem h3 {
     font-size: 14px;
-}.nieuwsitem h4, .nieuwsitem {
-    font-size: 11px;
+}
+
+.nieuwsitem h4,
+.nieuwsitem {
+    font-size: 0.9em;
 }
