@@ -1,0 +1,78 @@
+/* Stijlen specifiek voor de homepagina */
+.home .gridmain {
+    display: grid;
+    height: 90%;
+    grid-auto-flow: column;
+    grid-auto-columns: 50%;
+}
+
+.home .gridmain * {
+    line-break: loose !important;
+}
+
+.home .gridmain #main-l {
+    overflow: unset;
+    display: grid;
+    line-gap-override: 0px;
+    grid-auto-flow: row;
+}
+
+.home .gridmain #main-l>div {
+    height: max-content;
+    /* overflow: hidden; */
+    max-height: 35VH;
+    max-width: 80%;
+}
+
+.home .gridmain #main-r>div#spotlight {
+    overflow: hidden;
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.home .gridmain #main-r>h1 {
+    display: inline-block;
+    line-height: 13px;
+    height: 13px;
+}
+
+.home .gridmain #main-r,
+.home .gridmain #main-l>div {
+    background-color: #f0f8ff;
+    margin: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 0.7em;
+}
+
+.home .gridmain #main-r {
+    width: 30vw;
+    margin: 20px;
+
+}
+
+.home .nieuwsitem {
+    background-color: #b3b43e;
+    /* overflow: clip; */
+    max-width: 80%;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 40px;
+}
+
+.home .nieuwsitem h1 {
+    font-size: 19px;
+}
+
+.home .nieuwsitem h2 {
+    font-size: 16px;
+}
+
+.home .nieuwsitem h3 {
+    font-size: 14px;
+}
+
+.home .nieuwsitem h4,
+.home .nieuwsitem {
+    font-size: 0.9em;
+}

@@ -5,8 +5,26 @@
     <Subject>
 
 */
-/* Importeer de font-family declarations vanuit fontfamilies.css */
-@import url(./fontfamilies.css);
+@import url(perpage.css);
+@font-face {
+  font-family: "Josefin Sans";
+  src: url(../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url(../fonts/Fira_Sans/FiraSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Gantari";
+  src: url(../fonts/Gantari/Gantari-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url(../fonts/Syne/Syne-VariableFont_wght.ttf);
+}
 
 /* Standaard lettertypes voor Mar-stijl */
 body {
@@ -152,3 +170,4 @@ main {
   margin-left: 15VW;
   margin-right: 15VW;
 }
+
