@@ -20,7 +20,7 @@
 .home .gridmain #main-l>div {
     height: max-content;
     /* overflow: hidden; */
-    max-height: 35VH;
+    /* max-height: 40VH; */
     max-width: 80%;
 }
 
