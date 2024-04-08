@@ -1,16 +1,15 @@
 /* 
-    Author: MLC Bloeiman <@strawmelonjuice, mar@strawmelonjuice.com> 
-    Date: 26 maart 2024
+	Author: MLC Bloeiman <@strawmelonjuice, mar@strawmelonjuice.com> 
+	Date: 26 maart 2024
     
-    Website-wijd script voor project
+	Website-wijd script voor project
 
 */
 // Creeer de navigatiefuncties
 const sidenav = {
 	close: () => {
-		document.getElementById("side-nav").style.left = `-${
-			document.getElementById("side-nav").offsetWidth + 30
-		}px`;
+		document.getElementById("side-nav").style.left = `-${document.getElementById("side-nav").offsetWidth + 30
+			}px`;
 	},
 	open: () => {
 		document.getElementById("side-nav").style.left = "0";
@@ -38,8 +37,21 @@ var initialen = "TDW, MLCB";
 // Float-vorm
 var leeftijd1 = 20.4;
 // Int-vorm
-var leeftijd2= 16;
+var leeftijd2 = 16;
 
 // Booleans worden beheerst
 var evenOud = (leeftijd1 == leeftijd2); // false
 var waar = true; // true
+
+var ZIN = ("Tristan is " + leeftijd2 + ", Marniek is " + leeftijd1 + " jaar. Zijn zij even oud? " + evenOud).toUpperCase();
+console.log(ZIN);
+var zin = ZIN.toLowerCase();
+console.log(zin);
+
+console.log("Die zin is " + zin.length + " tekens lang");
+
+if (document.body.classList.contains("home")) {
+	document.getElementById("top-nav").innerHTML = "<text>U bent op de homepage</text>" + document.getElementById("top-nav").innerHTML;
+} else {
+	console.log("We zijn niet op de homepage, de banner hoeft niet weergegeven.");
+}

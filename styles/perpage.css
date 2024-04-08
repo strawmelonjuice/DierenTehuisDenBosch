@@ -49,7 +49,19 @@
     padding: 10px;
     font-size: 0.7em;
 }
-
+.home #top-nav text {
+    margin: 10px;
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    color: #f2f2f2;
+    border-radius: 5px;
+    background-color: #339db4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+}
 .home .gridmain #main-l {
     overflow: unset;
     display: grid;
