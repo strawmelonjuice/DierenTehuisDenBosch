@@ -31,3 +31,15 @@ window.onresize = () => {
 		sidenav.close();
 	}, 100);
 };
+// Strings worden beheerst
+var websitenaam = "DierenTehuisDenBosch";
+var initialen = "TDW, MLCB";
+// Getallen worden beheerst
+// Float-vorm
+var leeftijd1 = 20.4;
+// Int-vorm
+var leeftijd2= 16;
+
+// Booleans worden beheerst
+var evenOud = (leeftijd1 == leeftijd2); // false
+var waar = true; // true
