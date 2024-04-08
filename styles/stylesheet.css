@@ -2,7 +2,7 @@
     Author: MLC Bloeiman <@strawmelonjuice, mar@strawmelonjuice.com> 
     Date: 26 maart 2024
     
-    <Subject>
+    Stijlen voor algehele site
 
 */
 @import url(perpage.css);
@@ -171,3 +171,11 @@ main {
   margin-right: 15VW;
 }
 
+/* Stelt de dubbele main in voor de pagina's op donatietemplate */
+main div.main, main form.main {
+  background-color: #f0f8ff;
+    margin: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 0.7em;
+}

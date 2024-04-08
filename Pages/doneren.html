@@ -12,12 +12,14 @@
     <!-- Viewport definition -->
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <!-- Stylesheet importeren -->
-    <link href="styles1/stylesheet.css" rel="stylesheet" />
-    <script defer src="../scripts/page.js"></script>
+    <link href="../styles/stylesheet.css" rel="stylesheet" />
+    <link href="../styles/perpage.css" rel="stylesheet" />
+    <script defer src="../scripts/site.js"></script>    
+    <script src="../scripts/donatie.js" defer></script>
   </head>
 
-  <body>
-    <div id="top-nav">
+  <body class="doneren">
+    <nav id="top-nav">
       <span id="side-menu-opener">☰</span>
       <img
         src="https://dierentehuisdenbosch.nl/wp-content/themes/_s-master/img/logo-liggend.svg"
@@ -26,14 +28,19 @@
 			<a href="../index.html">Home</a>
 		<a href="../pages/doneren.html" class="current">Doneren</a>
 		<a href="../Pages/contact.html">Contact</a>
-    </div>
-    <div id="side-nav">
+    </nav>
+    <nav id="side-nav">
       <span id="side-menu-closer"><button>&times;</button></span>
-      <a href="">Onze toekomstvisie</a>
-    </div>
+      			
+			<a href="over.html">Over ons</a>			<a href="../Pages/toekomst.html">Onze toekomstvisie</a>
+
+            
+			<a href="">Afstand doen van uw huisdier</a>
+			<a href="">Wordt een vrijwilliger</a>
+
+    </nav>
     <main>
-        <script src="script1/script.js" defer></script>
-      <div id="main">
+      <div class="main">
         <h2>
             Doneren
         </h2>

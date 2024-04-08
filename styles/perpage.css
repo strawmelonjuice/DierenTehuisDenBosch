@@ -1,3 +1,13 @@
+/* 
+    Author: MLC Bloeiman <@strawmelonjuice, mar@strawmelonjuice.com> 
+    Date: 26 maart 2024
+    
+    Stijlen specifiek per pagina
+
+*/
+
+/* Om stijlen per pagina te selecteren dient een class toegevoegd te worden aan de body */
+
 /* Stijlen specifiek voor de homepagina */
 .home .gridmain {
     display: grid;
@@ -10,34 +20,34 @@
     line-break: loose !important;
 }
 
-.home .gridmain #main-l {
+.home .gridmain .main-l {
     overflow: unset;
     display: grid;
     line-gap-override: 0px;
     grid-auto-flow: row;
 }
 
-.home .gridmain #main-l>div {
+.home .gridmain .main-l>div {
     height: max-content;
     /* overflow: hidden; */
     /* max-height: 40VH; */
     max-width: 80%;
 }
 
-.home .gridmain #main-r>div#spotlight {
+.home .gridmain .main-r>div#spotlight {
     overflow: hidden;
     display: grid;
     grid-auto-flow: row;
 }
 
-.home .gridmain #main-r>h1 {
+.home .gridmain .main-r>h1 {
     display: inline-block;
     line-height: 13px;
     height: 13px;
 }
 
-.home .gridmain #main-r,
-.home .gridmain #main-l>div {
+.home .gridmain .main-r,
+.home .gridmain .main-l>div {
     background-color: #f0f8ff;
     margin: 20px;
     border-radius: 30px;
@@ -45,7 +55,7 @@
     font-size: 0.7em;
 }
 
-.home .gridmain #main-r {
+.home .gridmain .main-r {
     width: 30vw;
     margin: 20px;
 
@@ -75,4 +85,60 @@
 .home .nieuwsitem h4,
 .home .nieuwsitem {
     font-size: 0.9em;
+}
+
+/* Contactpagina */
+.contact main form.main {
+    align-items: center;
+}
+
+.contact main form.main textarea,
+.contact label {
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    border-color: #b3b43e;
+    border-style: dotted;
+}
+
+.contact label[for=submit] {
+    display: block;
+    padding: 10px;
+    margin: 20px;
+    width: 90%;
+}
+
+.contact input[type=submit] {
+    float: right;
+    margin: 0px;
+    display: inline;
+}
+
+.contact form.main {
+    max-width: 60VW;
+    margin: auto;
+}
+
+.contact main {
+    align-items: center;
+}
+
+
+
+/* Donatiepagina */
+.doneren div.main {
+    align-items: center;
+}
+
+.doneren button#donatieknop {
+    border-color: #b3b43e;
+    border-style: dotted;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
 }
