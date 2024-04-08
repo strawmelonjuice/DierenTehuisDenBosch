@@ -1,3 +1,11 @@
+/* 
+    Author: Tristan De Wit
+    Date: maart 2024
+    
+    Donatie pagina script
+
+*/
+
 var donatie = () => {var Doneer = prompt("Hoeveel wilt u doneren?");
 alert("U heeft" + " " + "$" + Doneer + " " + "gedoneerdt. Dank u wel." );
 
